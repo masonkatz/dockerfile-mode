@@ -26,10 +26,12 @@
 
 (require 'sh-script)
 (require 'rx)
-(require 's)
+;;(require 's)
 
 
-(declare-function cygwin-convert-file-name-to-windows "cygw32.c" (file &optional absolute-p))
+;; windows support needs s.el which we don't have
+;; also don't have windows
+;;(declare-function cygwin-convert-file-name-to-windows "cygw32.c" (file &optional absolute-p))
 
 (defgroup dockerfile nil
   "dockerfile code editing commands for Emacs."
